@@ -16,10 +16,9 @@ body {
 }
 
 .bg-papel-bottom{
-    height: 120px;
-    background-image: url('../imagens/bg-rasgado-branco-base.png');
+    background-image: url('../imagens/bg-rasgado-branco-topo.png');
     background-size: 100%;
-    background-position: 0 50px;
+    background-position: 0 -20px;
     background-repeat: no-repeat;
 }
 
@@ -68,7 +67,31 @@ body {
     text-decoration: none;
 }
 
+.txt-laranja{
+    color: #e2a355;
+}
 
+.txt-cinza{
+    color: #7f7770;
+}
+
+.bg-laranja{
+    background-color: #deb37e;
+}
+
+.bg-cinza{
+    background-color: #7f7770;
+}
+
+.bg-cinza-op5{
+    background-color: rgba(127, 119, 112, 0.50);
+}
+
+.bg-folhas-left{
+    background-image: url('../imagens/bg-sombra-folhagem.png');
+    background-repeat: no-repeat;
+    background-position: 0 bottom;
+}
 
 
 /* /////////  CELULAR E TABLETS //////////// */
