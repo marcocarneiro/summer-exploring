@@ -12,11 +12,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
 
   <!-- biblioteca de ícones -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
   <!-- Bootstrap CSS v5.2.0-beta1 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <link rel="stylesheet" href="./css/style.css">
 
@@ -68,7 +71,8 @@
     <section id="banner-topo" class="d-none d-md-block">
       <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+          <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="First slide"></li>
           <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
           <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
         </ol>
@@ -109,15 +113,19 @@
 
     <section id="bora" class="my-4 bg-folhas-left">
       <h2 class="text-center fw-bold text-uppercase fs-1 txt-laranja">Bora lá</h2>
-      <p class="text-center col-md-6 offset-md-3 mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam perferendis ex, sed molestias fuga veritatis maiores eveniet, delectus et iusto nemo. Reiciendis atque amet doloremque beatae esse numquam omnis assumenda.</p>
+      <p class="text-center col-md-6 offset-md-3 mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+        perferendis ex, sed molestias fuga veritatis maiores eveniet, delectus et iusto nemo. Reiciendis atque amet
+        doloremque beatae esse numquam omnis assumenda.</p>
 
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="flip-right">
           <div class="card bg-cinza-op5 text-light rounded-0 border-0">
             <img class="card-img-top rounded-0" src="./imagens/grupo2-3amigos.jpg" alt="Title">
             <div class="card-body">
               <h4 class="card-title">Title</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima exercitationem eligendi repellat ex consequuntur fuga accusamus dolorum sequi neque modi beatae facilis possimus sint quis, magnam aspernatur expedita dicta odit.</p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima exercitationem
+                eligendi repellat ex consequuntur fuga accusamus dolorum sequi neque modi beatae facilis possimus sint
+                quis, magnam aspernatur expedita dicta odit.</p>
             </div>
           </div>
         </div>
@@ -126,7 +134,9 @@
             <img class="card-img-top rounded-0" src="./imagens/grupo2-aventureira.jpg" alt="Title">
             <div class="card-body">
               <h4 class="card-title">Title</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur numquam porro deleniti magni at? Saepe modi, molestias asperiores odio natus vero, culpa suscipit dolores possimus esse voluptas quasi aut iure?</p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur numquam porro
+                deleniti magni at? Saepe modi, molestias asperiores odio natus vero, culpa suscipit dolores possimus
+                esse voluptas quasi aut iure?</p>
             </div>
           </div>
         </div>
@@ -135,18 +145,89 @@
             <img class="card-img-top rounded-0" src="./imagens/grupo2-bracos-abertos.jpg" alt="Title">
             <div class="card-body">
               <h4 class="card-title">Title</h4>
-              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat ea dolorem asperiores, dolores ipsam quod saepe, quas vero voluptatem ipsum, tempore enim nesciunt. Perferendis excepturi magni alias repellat deleniti maiores.</p>
+              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat ea dolorem
+                asperiores, dolores ipsam quod saepe, quas vero voluptatem ipsum, tempore enim nesciunt. Perferendis
+                excepturi magni alias repellat deleniti maiores.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="d-grid col-4 mx-auto mt-4">
+      <div class="d-grid col-2 mx-auto mt-4 expand-4">
         <button class="rounded-5 border-0 bg-cinza text-light p-3">Show More</button>
+      </div>
+    </section>
+
+
+    <section id="promocao" class="d-flex flex-wrap my-4">
+      <div class="col-md-6">
+        <img src="imagens/grupo4-3amigos.jpg" class="w-100" alt="Aventureiros olhando o horizonte">
+      </div>
+      <div class="col-md-6 bg-cinza py-5 px-5 d-flex flex-column justify-content-center">
+        <h2 class="text-light fw-bold">Desconto de 50% em todas excursões</h2>
+        <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti unde iusto pariatur
+          error cupiditate. Perferendis vero consequatur quod repellendus atque, voluptas reprehenderit illo modi
+          deleniti magnam at ut impedit beatae!</p>
+      </div>
+      <div class="col-md-6 bg-laranja py-5 px-5 d-flex flex-column justify-content-center">
+        <h2 class="text-light fw-bold">
+          Na compra de uma 1 excursão você ganha mais uma
+        </h2>
+        <p class="text-light">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure ipsum velit harum earum? Cupiditate
+          consequuntur facere amet debitis optio repellat et quia repudiandae dignissimos assumenda, molestias atque
+          animi excepturi quis.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <img src="imagens/grupo3-3amigos.jpg" alt="" class="w-100">
+      </div>
+    </section>
+
+
+    <section id="explorar">
+      <div class="col-12 bg-cinza-op5 d-flex flex-column justify-content-center align-items-center altura-400px bg-3">
+        <h2 class="text-light fw-bold text-center">Vença as montanhas</h2>
+        <p class="text-light text-center col-8">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus sint reiciendis iusto aut blanditiis
+          odit at dolorem illo cumque, maiores perferendis perspiciatis minima eaque asperiores tempora! Architecto at
+          distinctio animi.
+        </p>
+      </div>
+      <div class="col-12 position-relative">
+        <img src="./imagens/grupo6-escalada.jpg" class="w-100" alt="">
+        <h2 class="position-absolute top-50 end-0 px-5 txt-laranja fw-bold fs-1 fst-italic">EXPLORE O <span
+            class="txt-cinza">MUNDO</span></h2>
+      </div>
+
+      <div class="col-12 d-flex my-4 justify-content-evenly align-items-center altura-400px">
+        <div class="col-md-3">
+          <h2 class="txt-laranja fw-bold">Lorem Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nesciunt error voluptates velit ipsa
+            consequuntur saepe blanditiis, impedit rerum dignissimos perferendis? Fugit eligendi quae iure quos totam
+            recusandae sed tempora! </p>
+        </div>
+        <div class="col-md-3">
+          <h2 class="txt-laranja fw-bold">Lorem Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nesciunt error voluptates velit ipsa
+            consequuntur saepe blanditiis, impedit rerum dignissimos perferendis? Fugit eligendi quae iure quos totam
+            recusandae sed tempora! </p>
+        </div>
+        <div class="col-md-3">
+          <h2 class="txt-laranja fw-bold">Lorem Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nesciunt error voluptates velit ipsa
+            consequuntur saepe blanditiis, impedit rerum dignissimos perferendis? Fugit eligendi quae iure quos totam
+            recusandae sed tempora! </p>
+        </div>
+      </div>
+      <div class="col-12 bg-folhas-left flip-x my-5 altura-400px d-flex justify-content-center align-items-center">
+        <p class="col-md-6 p-4 fs-3 text-center flip-x">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. At modi totam, fuga ducimus voluptatum aspernatur
+          enim aliquam ea minima dolores quasi sed quas repellat! Voluptatum, at iure! Consequuntur, quam dolorem?
+        </p>
       </div>
 
     </section>
-    
 
   </main>
 
@@ -164,6 +245,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
     integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
     </script>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script src="js/custom.js"></script>
 </body>
