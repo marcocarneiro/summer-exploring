@@ -27,11 +27,32 @@ const getEstados = ()=>{
 
   //Lê a API através do fetch(), 1o then captura os dados, 2o then trata os dados
   fetch(api).then(resposta => resposta.json()).then(json => {
-    var options = '<option>Selecione</option>'
-    
+    let options = '<option>Selecione</option>'
+
+    //Percorre o objeto JSON com os estados do Brasil
+    for (const index in json) {
+      options += `<option value=${json[index].sigla}>${json[index].nome}</option>`
+    }    
     select.innerHTML = options
   })
+}
 
+
+//Preenche o select de cidades de acordo com o UF selecionado
+//A função recebe um parâmetro (uf) com a sigla da UF
+const getCidadesByUf = (uf)=>{
+  let api = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${uf}/municipios`
+  let select = document.getElementById('cidade')
+  
+  fetch(api).then(resposta => resposta.json()).then(json => {
+    let options = '<option>Selecione</option>'
+    
+    for (const index in json) {
+      options += `<option value=${json[index].nome}>${json[index].nome}</option>`
+    }    
+    select.innerHTML = options
+  })
+  
 }
 
 
@@ -75,25 +96,9 @@ AOS.init();
   })()
 
 
-
-/* 
-const getEstados = ()=>{
-  let api = 'https://servicodados.ibge.gov.br/api/v1/localidades/estados'
-  let select = document.getElementById('estado')
-
-  //Lê a API através do fetch(), 1o then captura os dados, 2o then trata os dados
-  fetch(api).then(resposta => resposta.json()).then(json => {
-    var options = '<option>Selecione</option>'
-    //Executa em cada item do JSON
-    for (const key in json) {
-      options += '<option>'+json[key].nome+'</option>'
-    }
-
-    select.innerHTML = options
-  })
-
-}
-*/
+document.getElementById('estado').addEventListener('change', function(){
+  getCidadesByUf(this.value)
+})
 
 
 
